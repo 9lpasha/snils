@@ -1,0 +1,1606 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "PlumbCondensed";
+  src: url("fonts/plumbcondensed-regular.eot");
+  src: local("☺"), url("fonts/plumbcondensed-regular.woff") format("woff"), url("fonts/plumbcondensed-regular.ttf") format("truetype"), url("fonts/plumbcondensed-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.head__info {
+  background-color: #151515;
+  opacity: 0.78;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 4;
+}
+
+.head__info_units {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.head__info_unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.head__info_1 {
+  font-size: 17px;
+  font-family: "PlumbCondensed";
+  color: #f5135c;
+  text-transform: uppercase;
+  line-height: 1.145;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+  margin-right: 2px;
+}
+
+.head__info_2 {
+  font-size: 17px;
+  font-family: "PlumbCondensed";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.145;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.head__snils {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#56a7c9+0,2674b5+59,1b5687+100 */
+  background: #56a7c9;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#56a7c9), color-stop(59%, #2674b5), to(#1b5687));
+  background: linear-gradient(to bottom, #56a7c9 0%, #2674b5 59%, #1b5687 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#56a7c9", endColorstr="#1b5687",GradientType=0 );
+  /* IE6-9 */
+  height: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 4;
+}
+
+.head__snils_image {
+  margin-right: 10px;
+}
+
+.head__snils_text1 {
+  font-size: 44px;
+  font-family: "Trebuchet MS";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.head__snils_text2 {
+  font-size: 44px;
+  font-family: "Trebuchet MS";
+  color: #e04d61;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav__upper {
+  background-color: white;
+  opacity: 0.78;
+  height: 38px;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 4;
+}
+
+.nav__upper_units {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.nav__upper_line {
+  display: inline;
+  margin-left: 0;
+}
+
+.left_line {
+  margin-right: 0;
+}
+
+.nav__upper_unit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.nav__upper_unit:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.with_dropmenu:hover .dropdown_menu1 {
+  display: block;
+}
+.with_dropmenu:hover .dropdown_menu1 .dropdown_menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+.with_dropmenu:hover .dropdown_menu1 .dropdown_menu2 .dropdown_submenu {
+  display: block;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: silver;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.nav__upper_text {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "PlumbCondensed";
+  color: #383838;
+  text-transform: uppercase;
+}
+
+.snils__main_image1 {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  z-index: 3;
+}
+
+.snils__main_image2 {
+  position: absolute;
+  left: 0;
+  top: 34px;
+  z-index: 1;
+}
+
+.snils__main_image3 {
+  position: absolute;
+  left: 341px;
+  top: 81px;
+  z-index: 2;
+}
+
+.snils__main_stripe {
+  background-color: rgba(255, 255, 255, 0.239);
+  height: 78px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  margin-top: 385px;
+  margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.snils__main_text {
+  font-size: 29px;
+  font-family: "PlumbCondensed";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.46);
+  position: absolute;
+  right: 70px;
+  z-index: 5;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description__main {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff4281+0,f20450+100 */
+  background: #ff4281;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff4281), to(#f20450));
+  background: linear-gradient(to bottom, #ff4281 0%, #f20450 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff4281", endColorstr="#f20450",GradientType=0 );
+  /* IE6-9 */
+  margin-top: 50px;
+  width: 90%;
+  height: 51px;
+  z-index: 27;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+}
+
+.description__main_text {
+  font-size: 29px;
+  font-family: "PlumbCondensed";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.46);
+  z-index: 29;
+}
+
+.description__text {
+  margin-top: 30px;
+  width: 80%;
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: #272727;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+
+.description__image {
+  margin-right: 50px;
+  -webkit-box-shadow: -10px -10px -10px 10px 10px black;
+          box-shadow: -10px -10px -10px 10px 10px black;
+}
+
+.description__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.group__ingroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.description_text2 {
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: #272727;
+  font-weight: bold;
+  margin-bottom: 22px;
+  line-height: 20px;
+}
+
+.description__list_unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 22px;
+}
+
+.description__unit_image {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.description__unit_text {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: #272727;
+}
+
+.description__text3 {
+  font-size: 18px;
+  font-family: "Trebuchet MS";
+  color: #f5135c;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  width: 90%;
+}
+
+.wheresnils {
+  width: 100%;
+  background: url("images/ten'.png") 50% 100%/100% 10px no-repeat, url("images/group.png") 50% 100%/cover no-repeat, url("images/onred_picture.png") 0 0/cover no-repeat, url("images/red.png") 0 0/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wheresnils__uppertext {
+  margin: 50px 0;
+  width: 85%;
+  font-size: 18px;
+  font-family: "Trebuchet MS";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.wheresnils__main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+.wheresnils__main > img {
+  display: block;
+}
+
+.wheresnils__main_image2 {
+  position: absolute;
+  top: 6px;
+}
+
+.wheresnils__main_image3 {
+  position: absolute;
+  top: 77px;
+}
+
+.wheresnils__main_text {
+  font-size: 48px;
+  font-family: "PlumbCondensed";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.46);
+  position: absolute;
+  top: 20px;
+}
+
+.wheresnils__units {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin-bottom: 95px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wheresnils__unit {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 320px;
+}
+
+.wheresnils__unit_image {
+  margin-bottom: 25px;
+}
+
+.wheresnils__unit_main {
+  font-size: 30px;
+  font-family: "PlumbCondensed";
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.wheresnils__unit_text {
+  font-size: 17px;
+  font-family: "Trebuchet MS";
+  color: white;
+  width: 62%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.question {
+  background: url("images/under_where.png") 50% 0/103px 60px no-repeat;
+  height: 500px;
+  -webkit-box-shadow: 0 5 0 white, 0 0 10px black;
+          box-shadow: 0 5 0 white, 0 0 10px black;
+  padding-top: 52px;
+}
+
+.question__line {
+  background: url("images/q_group.png") 50% 50%/cover no-repeat;
+  height: 360px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.question__line_units {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 88%;
+}
+
+.question__arrow {
+  height: 40%;
+}
+.question__arrow > img {
+  height: 100%;
+  width: 66%;
+}
+
+.question__text {
+  font-size: 30px;
+  font-family: "PlumbCondensed";
+  color: white;
+  line-height: 1.2;
+  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.34);
+  width: 300px;
+  margin-right: 10px;
+}
+
+.question__form {
+  background: url("images/question_zapros.png") 0 0/100% 100% no-repeat;
+  height: 410px;
+  width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallfon_main {
+  font-size: 18.219px;
+  font-family: "Trebuchet MS";
+  color: #56575b;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.317;
+  text-align: center;
+  margin-top: 40px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.smallfon_name {
+  border: 1px solid rgba(29, 79, 112, 0.5);
+  width: 80%;
+  height: 7%;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: black;
+  font-style: italic;
+  padding: 5px;
+}
+
+.smallfon_phone {
+  border: 1px solid rgba(29, 79, 112, 0.5);
+  width: 80%;
+  height: 7%;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: black;
+  font-style: italic;
+  padding: 5px;
+}
+
+.smallfon_question {
+  border: 1px solid rgba(29, 79, 112, 0.5);
+  width: 80%;
+  height: 28%;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: black;
+  font-style: italic;
+  padding: 0 5px 85px 5px;
+}
+
+.smallfon_button {
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#56a7c9+0,2674b5+59,1b5687+100 */
+  background: #56a7c9;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#56a7c9), color-stop(59%, #2674b5), to(#1b5687));
+  background: linear-gradient(to bottom, #56a7c9 0%, #2674b5 59%, #1b5687 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#56a7c9", endColorstr="#1b5687",GradientType=0 );
+  /* IE6-9 */
+  width: 174px;
+  height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.smallfon_button > div {
+  font-size: 17.63px;
+  font-family: "Trebuchet MS";
+  color: white;
+  text-align: center;
+}
+
+.snils_default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0px;
+  width: 100%;
+  height: 306px;
+  background: url("images/snils_default.png") 50% 0/auto 100% no-repeat;
+  margin-bottom: 100px;
+}
+
+.snils_default_text {
+  font-size: 17px;
+  font-family: "Trebuchet MS";
+  color: #2d2d2d;
+  line-height: 1.588;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 80px;
+  padding: 0 10%;
+}
+
+footer {
+  background: url("images/footer1.png") 0 0/cover, url("images/footer2.png") 0 0/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__lower {
+  opacity: 0.78;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.nav__lower_text {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.footer__line {
+  width: 87%;
+  outline: 0.1px solid #7171b1;
+}
+
+.footer__units {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer_unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.footer_unittext {
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: white;
+  line-height: 1.286;
+  text-align: left;
+  width: 55%;
+  margin-left: 20px;
+}
+
+.footer__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer_text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_name {
+  height: 30px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 4px black;
+          box-shadow: 0 0 4px black;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 17px;
+  font-family: "PlumbCondensed";
+  color: black;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.footer_phone {
+  height: 30px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 4px black;
+          box-shadow: 0 0 4px black;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 17px;
+  font-family: "PlumbCondensed";
+  color: black;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.footer_mail {
+  height: 30px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 4px black;
+          box-shadow: 0 0 4px black;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 17px;
+  font-family: "PlumbCondensed";
+  color: black;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.footer_unit2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.footer_question {
+  height: 110px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 4px black;
+          box-shadow: 0 0 4px black;
+  margin: 15px;
+  padding: 0 5px 80px 5px;
+  font-size: 17px;
+  font-family: "PlumbCondensed";
+  color: black;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.footer__button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  background: #e04d61;
+}
+
+.footer__button_text {
+  font-size: 12.251px;
+  font-family: "Trebuchet MS";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer__namesite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.footer__mobiles {
+  font-size: 30px;
+  font-family: "PlumbCondensed";
+  color: #fffefe;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.footer__info {
+  margin: 0 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  font-size: 21px;
+  font-family: "PlumbCondensed";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown_menu1 {
+  width: 95%;
+  height: 500%;
+  position: absolute;
+  left: 2.5%;
+  top: 100%;
+  display: none;
+}
+
+.dropdown_menu2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  display: none;
+}
+
+.dropdown_submenu {
+  background: #272727;
+  display: none;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.dropdown_submenu:hover {
+  background: #757575;
+}
+
+.footer__button:hover {
+  background: #7b0329;
+  cursor: pointer;
+}
+
+.smallfon_button:hover {
+  background: slateblue;
+  cursor: pointer;
+}
+
+.menu-burger{
+  width: 30px;
+  height: 30px;
+  background: url('images/menu_icon-icons.com_48263.png') 0 0/100% 100% no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+@media (max-width: 1319px) {
+  .snils__main_image2 {
+    position: absolute;
+    right: 258px;
+    left: auto;
+    top: 34px;
+    z-index: 1;
+  }
+
+  .snils__main_image3 {
+    position: absolute;
+    right: 516px;
+    left: auto;
+    top: 81px;
+    z-index: 2;
+  }
+}
+@media (max-width: 1247px) {
+  .head__info_units {
+    width: 95%;
+  }
+
+  .description__text3 {
+    text-align: center;
+  }
+
+  .footer__info {
+    width: 90%;
+  }
+}
+@media (max-width: 1061px) {
+  .footer__units {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer_unit2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .snils__main_stripe {
+    text-align: center;
+  }
+
+  .snils__main_text {
+    text-align: center;
+    right: auto;
+  }
+
+  .footer_unittext {
+    font-size: 14px;
+    font-family: "Trebuchet MS";
+    color: white;
+    line-height: 1.286;
+    text-align: center;
+    width: 55%;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+@media (max-width: 1000px) {
+  .snils__main_image1 {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    z-index: 3;
+    display: none;
+  }
+
+  .snils__main_image2 {
+    position: absolute;
+    right: auto;
+    top: 34px;
+    z-index: 1;
+  }
+
+  .snils__main_image3 {
+    position: absolute;
+    right: auto;
+    top: 81px;
+    left: 341px;
+    z-index: 1;
+  }
+
+  .nav__lower {
+    display: none;
+  }
+
+  .footer_unit {
+    display: none;
+  }
+
+  .footer_unit2 {
+    display: block;
+  }
+
+  .footer__line {
+    display: none;
+  }
+
+  .snils_default {
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .snils_default_text {
+    font-size: 14px;
+  }
+
+  .question__image {
+    display: none;
+  }
+
+  .question__arrow {
+    display: none;
+  }
+
+  .question__line_units {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .description__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .description__image {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .description_text2 {
+    margin-bottom: 50px;
+  }
+
+  .footer_unit2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__info > div {
+    width: 230px;
+    text-align: center;
+    line-height: 25px;
+  }
+  .snils__main_stripe{
+  	background: rgba(74, 68, 70, 0.4);
+  }
+}
+@media (max-width: 817px) {
+  .snils__main_image2 {
+    position: absolute;
+    right: -240px;
+    top: 34px;
+    z-index: 1;
+  }
+
+  .snils__main_image3 {
+    position: absolute;
+    right: 17px;
+    left: auto;
+    top: 81px;
+    z-index: 1;
+  }
+
+  .nav__upper_units {
+    width: 100%;
+  }
+
+  .head__info {
+    display: none;
+  }
+
+  .snils__main_text {
+    width: 90%;
+  }
+
+  .snils__main_text {
+    font-size: 24px;
+  }
+
+  .snils__main_image2 {
+    height: auto;
+    width: 801px;
+    left: 0;
+    right: auto;
+  }
+
+  .snils__main_image3 {
+    height: auto;
+    width: 321px;
+    left: 267px;
+    right: auto;
+  }
+
+  .snils__main_stripe {
+    margin-top: 285px;
+  }
+
+  .wheresnils__unit {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .wheresnils__units {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .head__snils {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .nav__upper {
+    display: none;
+  }
+
+  .snils__main_image2 {
+    display: none;
+  }
+
+  .snils__main_image3 {
+    display: none;
+  }
+
+  .snils__main_stripe {
+    margin-bottom: -20px;
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .description__text {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .description__group {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .description__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .description__image > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .group__ingroup {
+    padding: 20px;
+  }
+
+  .description_text2 {
+    margin-bottom: 25px;
+  }
+
+  .description__text3 {
+    margin-bottom: 35px;
+  }
+
+  .wheresnils__uppertext {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .wheresnils__main {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: #ff588d;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .wheresnils__main img {
+    display: none;
+  }
+  .wheresnils__main .wheresnils__main_text {
+    top: 27px;
+  }
+
+  .wheresnils__unit_text {
+    width: 100%;
+  }
+
+  .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__info div {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .footer_unit2 {
+    margin-bottom: 10px;
+  }
+
+  .head__snils{
+    height: 50px;
+    justify-content: start;
+    padding-left: 20px;
+  }
+
+  .head__snils_image{
+    width: 35px;
+    height: 43px;
+  }
+
+  .head__snils_text1{
+    font-size: 32px;
+  }
+  .head__snils_text2{
+    font-size: 32px;
+  }
+
+  .menu-burger{
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .menu-burger__fullscreen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background:  rgb(134, 82, 255);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+  }
+
+  .nav__upper_units{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 200px;
+    height: 50%;
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .nav__upper_unit{
+    border-top:  solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .nav__upper_unit:hover{
+    background: none;
+    border-radius: 0;
+    cursor: none;
+  }
+
+  .krest{
+    height: 30px;
+    width: 30px;
+    background: url('images/1487086345-cross_81577.png') 0 0/100% 100% no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+
+  .burger_strelka{
+    width: 15px;
+    height: 15px;
+    background: url('images/downarrow_121316.png') 0 0/100% 100% no-repeat;
+  }
+
+  .nav__upper_units:nth-child(n+3){
+    transition-duration: 2.5s;
+  }
+
+  .dropdown_submenu:hover{
+    background: #272727;
+  }
+}
+@media (max-width: 600px) {
+  .snils_default {
+    height: 400px;
+    background: url("images/snils_default.png") 50% 0/200% auto no-repeat;
+    margin-bottom: 0px;
+  }
+
+  .snils_default_text {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .question__text {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .description__main div {
+    font-size: 24px;
+  }
+
+  .wheresnils__uppertext {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .wheresnils__main .wheresnils__main_text {
+    font-size: 28px;
+    top: 7px;
+  }
+
+  .wheresnils__main {
+    height: 40px;
+  }
+
+  .wheresnils__unit_main {
+    font-size: 24px;
+  }
+}
+@media (max-width: 465px) {
+  .footer__info {
+    font-size: 20px;
+  }
+
+  .footer__mobiles {
+    font-size: 20px;
+  }
+
+  .snils_default {
+    height: 300px;
+  }
+
+  .description__image {
+    margin-bottom: 0;
+  }
+
+  .description__main div {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .wheresnils__main .wheresnils__main_text {
+    font-size: 20px;
+    top: 9px;
+  }
+
+  .wheresnils__unit_text {
+    padding: 20px;
+    font-size: medium;
+  }
+}
+
+@media(min-width: 1500px){
+	.snils__main_image1{
+		display: none;
+	}
+	.snils__main_image2{
+		display: none;
+	}
+	.snils__main_image3{
+		display: none;
+	}
+	.first_chapter{
+    height: 521px;
+	  background: url('images/for_big.jpg') 50% 100%/1640px 706px no-repeat, rgb(255, 255, 255);
+	  background: url('images/for_big.jpg') 50% 100%/1640px 706px no-repeat, 
+	  linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(141,122,121,1) 9%, rgba(102,69,70,1) 14%, 
+		rgba(82,43,45,1) 18%, rgba(59,11,15,1) 26%, rgba(209,227,237,1) 90%, rgba(255,255,255,1) 100%);
+	}
+	.snils__main_stripe{
+		background: rgba(74, 68, 70, 0.4);
+		display: flex;
+		justify-content: center;
+
+	}
+	.snils__main_text{
+		text-align: center;
+		right: auto;
+	}
+}
